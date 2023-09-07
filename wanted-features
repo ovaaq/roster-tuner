@@ -1,0 +1,27 @@
+1. You can build any Imperial Knight army roster
+  - Select Faction
+  - Select Detachment Rule
+  - Army Roster Name
+  - Roster Size 
+  - Get possible units to add
+  - Add unit and select the wargear options if any
+  - Select Warlord
+  - Delete Unit
+  - Add Enhancements
+  - Remove Enhancements
+  - Change Warlord
+  - Rename Army Roster
+
+2. You can export any roster with few different formats (pdf, markdown, text) and even same style than Warhammer+ Battleforge
+
+3. You can import any roster given in Warhammer+ Battleforge format
+
+4. You get insights of your army roster
+  - What ranged weapon profiles you have. Amount of shots, AP, Strength, BS, etc
+  - What melee weapon profiles you have. Amount of hits, AP, Strength, WS, etc
+  - Generally how horder / elite your list is
+  - Potential damage simulations about given targets
+  - Units keyword compositions
+  - Unit movement analysis
+  - Unit Toughness and Wound analysis
+  - Unit receiving damage from given source
