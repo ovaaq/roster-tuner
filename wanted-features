@@ -25,3 +25,5 @@
   - Unit movement analysis
   - Unit Toughness and Wound analysis
   - Unit receiving damage from given source
+
+5. Calculate all possible army roster combinations from given detachment and point size
