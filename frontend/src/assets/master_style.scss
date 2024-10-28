@@ -1,0 +1,65 @@
+// 1. Import the initial variables
+@import "./../node_modules/bulma/sass/utilities/initial-variables";
+@import "./../node_modules/bulma/sass/utilities/functions";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+// 2. Set your own initial variables
+// Update blue
+$green: #2BA84A;
+// Add pink and its invert
+$pink: #ffb3b3;
+$pink-invert: #fff;
+// Add a serif family
+$family-fira: 'Fira Sans', sans-serif;
+$text: #040F0F;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$patreon: #F96854;
+$discord: #7289da;
+$primary: $green;
+$primary-invert: $pink-invert;
+// Use the existing orange as the danger color
+$danger: $orange;
+// Use the new serif family
+$family-primary: $family-fira;
+
+// 4. Setup your Custom Colors
+$patreon: #F96854;
+$patreon-invert: findColorInvert($patreon);
+$discord: #7289da;
+$discord-invert: findColorInvert($discord);
+$linkedin: #0077b5;
+$linkedin-invert: findColorInvert($linkedin);
+$twitter: #55acee;
+$twitter-invert: findColorInvert($twitter);
+$github: #333;
+$github-invert: findColorInvert($github);
+$instagram: #C13584;
+$instagram-invert: findColorInvert($instagram);
+$facebook: #4267B2;
+$facebook-invert: findColorInvert($facebook);
+
+
+$navbar-height: 5.25rem;
+$navbar-item-img-max-height: 3.75rem;
+$navbar-item-hover-color: $green;
+$footer-background-color: $green;
+$footer-padding: 2rem 2rem 4rem;
+$size-7: 0.9rem;
+$panel-heading-size: 1rem;
+
+// 5. Add new color variables to the color map.
+@import "./../node_modules/bulma/sass/utilities/derived-variables";
+$addColors: (
+  "patreon":($patreon, $patreon-invert),
+  "discord": ($discord, $discord-invert),
+  "github": ($github, $github-invert),
+  "instagram": ($instagram, $instagram-invert),
+  "facebook": ($facebook, $facebook-invert)
+
+);
+$colors: map-merge($colors, $addColors);
+
+// 6. Import the rest of Bulma
+@import "./../node_modules/bulma/bulma.sass";
