@@ -1,0 +1,75 @@
+{
+  "factions": [
+    [
+      "imperial knights",
+      [
+        "noble lance"
+      ],
+      [
+        {
+          "name": "banner of macharius triumphant",
+          "cost": 30,
+          "flavor": "A gift from Lord Solar Macharius himself to honour the noble houses that accompanied his crusade, legend has it that this banner has never seen defeat: every time a Knight has carried it to war, a great victory has been won.",
+          "rules": "Imperial Knights model only. If you control an objective marker at the end of your Command phase and the bearer is within range of that objective marker, that objective marker remains under your control even if you have no models within range of it, until your opponent controls it at the start or end of any turn.",
+          "selectable_models": [
+            "armiger",
+            "questoris",
+            "dominus"
+          ]
+        },
+        {
+          "name": "mysterious guardian",
+          "cost": 35,
+          "flavor": "Manifesting as though from nowhere, this Noble’s titanic steed is an elemental force of vengeance against the Emperor of Mankind’s foes. At battle’s end, it disappears as mysteriously as it arrived.",
+          "rules": "Imperial Knights model only. The bearer has the Deep Strike ability. Once per battle, at the end of your opponent’s turn, if the bearer is not within Engagement Range of any enemy units, it can fade away. If it does, remove it from the battlefield then, in the Reinforcements step of your subsequent Movement phase, set it up anywhere on the battlefield that is more than 9\" horizontally away from all enemy models. If the battle ends and the bearer is not on the battlefield, it is destroyed.",
+          "selectable_models": [
+            "armiger",
+            "questoris",
+            "dominus"
+          ]
+        },
+        {
+          "name": "mythic hero",
+          "cost": 25,
+          "flavor": "This warrior is a legendary figure who embodies the Code Chivalric, and tales of their deeds have spread far and wide. To be a Bondsman to such a warrior is a great honour indeed.",
+          "rules": "Questoris model with a Bondsman ability only. Each time the bearer uses its Bondsman ability, you can select one additional friendly Armiger model within 12\" of the bearer that is not already being affected by a Bondsman ability. Until the start of your next Command phase, that model is also affected by that Bondsman ability.",
+          "selectable_models": [
+            "questoris"
+          ]
+        },
+        {
+          "name": "revered knight",
+          "cost": 20,
+          "flavor": "Never hesitating before tyrannical invaders, this Knight is beheld as the very epitome of honour – a monolithic incarnation of the Imperium. While they stand, courage is inviolate and victory is assured.",
+          "rules": "Imperial Knights model only. While a friendly Imperial Knights model is within 6\" of the bearer, improve that model’s Leadership characteristic by 1. If your army is Honoured, increase the range of this Aura ability to 12\".",
+          "selectable_models": [
+            "armiger",
+            "questoris",
+            "dominus"
+          ]
+        },
+        {
+          "name": "unyielding paragon",
+          "cost": 40,
+          "flavor": "this knight is an unyielding army unto themselves, capable of engaging entire enemy forces and holding their ground, emerging through the fiercest firestorms bloodied, but unbowed.",
+          "rules": "questoris model only. each time an attack is allocated to the bearer, worsen the armour penetration characteristic of that attack by 1.",
+          "selectable_models": [
+            "questoris"
+          ]
+        }
+      ]
+    ],
+    [
+      "drukhari",
+      [
+        "noble lance"
+      ]
+    ],
+    [
+      "adepta sororitas",
+      [
+        "noble lance"
+      ]
+    ]
+  ]
+}

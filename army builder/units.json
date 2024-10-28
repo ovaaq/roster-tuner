@@ -1,0 +1,494 @@
+{
+  "units": [
+    {
+      "name": "armiger helverin",
+      "cost": 140,
+      "m": "12\"",
+      "t": "10",
+      "sv": "3+",
+      "w": "12",
+      "ld": "7+",
+      "oc": "8",
+      "keywords": [
+        "vehicle",
+        "walker",
+        "battleline",
+        "imperium",
+        "armiger",
+        "helverin"
+      ],
+      "faction_keywords": [
+        "imperial knights"
+      ],
+      "wargear": {
+        "always": [
+          "armiger autocannon",
+          "armiger autocannon"
+        ],
+        "options": [
+          [
+            "meltagun",
+            "questoris heavy stubber"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "armiger warglaive",
+      "cost": 150,
+      "m": "12\"",
+      "t": "10",
+      "sv": "3+",
+      "w": "12",
+      "ld": "7+",
+      "oc": "8",
+      "keywords": [
+        "vehicle",
+        "walker",
+        "battleline",
+        "imperium",
+        "armiger",
+        "warglaive"
+      ],
+      "faction_keywords": [
+        "imperial knights"
+      ],
+      "wargear": {
+        "always": [
+          "reaper chain-cleaver",
+          "thermal spear"
+        ],
+        "options": [
+          [
+            "meltagun",
+            "questoris heavy stubber"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "calidus assassin",
+      "cost": 100,
+      "m": "7\"",
+      "t": "4",
+      "sv": "6+",
+      "w": "4",
+      "ld": "6+",
+      "oc": "1",
+      "keywords": [
+        "infantry",
+        "character",
+        "epic hero",
+        "imperium",
+        "callidus assassin"
+      ],
+      "faction_keywords": [
+        "agents of the imperium"
+      ],
+      "wargear": {
+        "always": [
+          "neural shredder",
+          "phase sword",
+          "poison blades"
+        ],
+        "options": []
+      }
+    },
+    {
+      "name": "canis rex",
+      "cost": 435,
+      "m": "10\"",
+      "t": "12",
+      "sv": "3+",
+      "w": "22",
+      "ld": "5+",
+      "oc": "10",
+      "keywords": [
+        "vehicle",
+        "walker",
+        "titanic",
+        "towering",
+        "questoris",
+        "character",
+        "epic hero",
+        "imperium",
+        "canis rex"
+      ],
+      "faction_keywords": [
+        "imperial knights"
+      ],
+      "wargear": {
+        "always": [
+          "chainbreaker las-impulsor",
+          "chainbreaker multi-laser",
+          "freedom's hand"
+        ],
+        "options": []
+      }
+    },
+    {
+      "name": "knight castellan",
+      "cost": 565,
+      "m": "8\"",
+      "t": "13",
+      "sv": "2+",
+      "w": "24",
+      "ld": "6+",
+      "oc": "10",
+      "keywords": [
+        "vehicle",
+        "walker",
+        "titanic",
+        "towering",
+        "dominus",
+        "character",
+        "imperium",
+        "knight castellan"
+      ],
+      "faction_keywords": [
+        "imperial knights"
+      ],
+      "wargear": {
+        "always": [
+          "titanic feet",
+          "volcano lance",
+          "plasma decimator",
+          "shieldbreaker missile launcher",
+          "twin siegebreaker cannon"
+        ],
+        "options": [
+          [
+            "shieldbreaker missile launcher",
+            "twin siegebreaker cannon"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "knight crusader",
+      "cost": 475,
+      "m": "10\"",
+      "t": "12",
+      "sv": "3+",
+      "w": "22",
+      "ld": "6+",
+      "oc": "10",
+      "keywords": [
+        "vehicle",
+        "walker",
+        "titanic",
+        "towering",
+        "questoris",
+        "character",
+        "imperium",
+        "knight crusader"
+      ],
+      "faction_keywords": [
+        "imperial knights"
+      ],
+      "wargear": {
+        "always": [
+          "titanic feet",
+          "avenger gatling cannon",
+          "heavy flamer"
+        ],
+        "options": [
+          [
+            "meltagun",
+            "questoris heavy stubber"
+          ],
+          [
+            "thermal cannon",
+            "questoris heavy stubber & rapid-fire battlecannon"
+          ],
+          [
+            "icarus autocannons",
+            "ironstorm missile pod",
+            "stormspear rocket pod"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "knight errant",
+      "cost": 430,
+      "m": "10\"",
+      "t": "12",
+      "sv": "3+",
+      "w": "22",
+      "ld": "6+",
+      "oc": "10",
+      "keywords": [
+        "vehicle",
+        "walker",
+        "titanic",
+        "towering",
+        "questoris",
+        "character",
+        "imperium",
+        "knight errant"
+      ],
+      "faction_keywords": [
+        "imperial knights"
+      ],
+      "wargear": {
+        "always": [
+          "thermal cannon"
+        ],
+        "options": [
+          [
+            "meltagun",
+            "questoris heavy stubber"
+          ],
+          [
+            "reaper chainsword",
+            "thunderstrike gauntlet"
+          ],
+          [
+            "icarus autocannons",
+            "ironstorm missile pod",
+            "stormspear rocket pod"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "knight gallant",
+      "cost": 400,
+      "m": "12\"",
+      "t": "12",
+      "sv": "3+",
+      "w": "22",
+      "ld": "6+",
+      "oc": "10",
+      "keywords": [
+        "vehicle",
+        "walker",
+        "titanic",
+        "towering",
+        "questoris",
+        "character",
+        "imperium",
+        "knight gallant"
+      ],
+      "faction_keywords": [
+        "imperial knights"
+      ],
+      "wargear": {
+        "always": [
+          "reaper chainsword",
+          "thunderstrike gauntlet"
+        ],
+        "options": [
+          [
+            "meltagun",
+            "questoris heavy stubber"
+          ],
+          [
+            "icarus autocannons",
+            "ironstorm missile pod",
+            "stormspear rocket pod"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "knight paladin",
+      "cost": 450,
+      "m": "10\"",
+      "t": "12",
+      "sv": "3+",
+      "w": "22",
+      "ld": "6+",
+      "oc": "10",
+      "keywords": [
+        "vehicle",
+        "walker",
+        "titanic",
+        "towering",
+        "questoris",
+        "character",
+        "imperium",
+        "knight paladin"
+      ],
+      "faction_keywords": [
+        "imperial knights"
+      ],
+      "wargear": {
+        "always": [
+          "rapid-fire battle cannon"
+        ],
+        "options": [
+          [
+            "meltagun",
+            "questoris heavy stubber"
+          ],
+          [
+            "reaper chainsword",
+            "thunderstrike gauntlet"
+          ],
+          [
+            "icarus autocannons",
+            "ironstorm missile pod",
+            "stormspear rocket pod"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "knight preceptor",
+      "cost": 430,
+      "m": "10\"",
+      "t": "12",
+      "sv": "3+",
+      "w": "22",
+      "ld": "6+",
+      "oc": "10",
+      "keywords": [
+        "vehicle",
+        "walker",
+        "titanic",
+        "towering",
+        "questoris",
+        "character",
+        "imperium",
+        "knight preceptor"
+      ],
+      "faction_keywords": [
+        "imperial knights"
+      ],
+      "wargear": {
+        "always": [
+          "las-impulsor",
+          "rapid-fire battle cannon"
+        ],
+        "options": [
+          [
+            "preceptor multi-laser",
+            "meltagun",
+            "questoris heavy stubber"
+          ],
+          [
+            "reaper chainsword",
+            "thunderstrike gauntlet"
+          ],
+          [
+            "icarus autocannons",
+            "ironstorm missile pod",
+            "stormspear rocket pod"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "knight valiant",
+      "cost": 565,
+      "m": "8\"",
+      "t": "13",
+      "sv": "2+",
+      "w": "24",
+      "ld": "6+",
+      "oc": "10",
+      "keywords": [
+        "vehicle",
+        "walker",
+        "titanic",
+        "towering",
+        "dominus",
+        "character",
+        "imperium",
+        "knight valiant"
+      ],
+      "faction_keywords": [
+        "imperial knights"
+      ],
+      "wargear": {
+        "always": [
+          "titanic feet",
+          "conflagration cannon",
+          "thundercoil harpoon",
+          "shieldbreaker missile launcher",
+          "twin siegebreaker cannon"
+        ],
+        "options": [
+          [
+            "shieldbreaker missile launcher",
+            "twin siegebreaker cannon"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "knight warden",
+      "cost": 480,
+      "m": "10\"",
+      "t": "12",
+      "sv": "3+",
+      "w": "22",
+      "ld": "6+",
+      "oc": "10",
+      "keywords": [
+        "vehicle",
+        "walker",
+        "titanic",
+        "towering",
+        "questoris",
+        "character",
+        "imperium",
+        "knight warden"
+      ],
+      "faction_keywords": [
+        "imperial knights"
+      ],
+      "wargear": {
+        "always": [
+          "avenger gatling cannon"
+        ],
+        "options": [
+          [
+            "meltagun",
+            "questoris heavy stubber"
+          ],
+          [
+            "reaper chainsword",
+            "thunderstrike gauntlet"
+          ],
+          [
+            "icarus autocannons",
+            "ironstorm missile pod",
+            "stormspear rocket pod"
+          ]
+        ]
+      }
+    },
+    {
+      "name": "vindicare assassin",
+      "cost": 80,
+      "m": "7\"",
+      "t": "4",
+      "sv": "6+",
+      "w": "4",
+      "ld": "6+",
+      "oc": "1",
+      "keywords": [
+        "infantry",
+        "character",
+        "epic hero",
+        "smoke",
+        "imperium",
+        "vindicare assassin"
+      ],
+      "faction_keywords": [
+        "agents of the imperium"
+      ],
+      "wargear": {
+        "always": [
+          "exitus pistol",
+          "exitus rifle",
+          "vindicare combat knife"
+        ],
+        "options": []
+      }
+    }
+  ]
+}
