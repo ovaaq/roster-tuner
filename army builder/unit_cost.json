@@ -1,0 +1,117 @@
+{
+  "units": [
+    {
+      "name": "Armiger Helverin",
+	  "cost": [[1,140]],
+    },
+    {
+      "name": "Armiger Warglaive",
+	  "cost": [[1,150]],
+    },
+    {
+      "name": "Canis Rex",
+	  "cost": [[1,450]],
+    },
+	{
+      "name": "Knight Castellan",
+	  "cost": [[1,510]],
+    },
+	{
+      "name": "Knight Crusader",
+	  "cost": [[1,445]],
+    },
+	{
+      "name": "Knight Errant",
+	  "cost": [[1,390]],
+    },
+	{
+      "name": "Knight Gallant",
+	  "cost": [[1,380]],
+    },
+	{
+      "name": "Knight Paladin",
+	  "cost": [[1,405]],
+    },
+	{
+      "name": "Knight Preceptor",
+	  "cost": [[1,405]],
+    },
+	{
+      "name": "Knight Valiant",
+	  "cost": [[1,510]],
+    },
+	{
+      "name": "Knight Warden",
+	  "cost": [[1,450]],
+    },
+	{
+      "name": "Callidus Assassin",
+	  "cost": [[1,100]],
+    },
+	{
+      "name": "Culexus Assassin",
+	  "cost": [[1,100]],
+    },
+	{
+      "name": "Eversor Assassin",
+	  "cost": [[1,120]],
+    },
+	{
+      "name": "Exaction Squad",
+	  "cost": [[11,90]],
+    },
+	{
+      "name": "Imperial Navy Breachers",
+	  "cost": [[10,90]],
+    },
+	{
+      "name": "Inquisitor Coteaz",
+	  "cost": [[1,95]],
+    },
+	{
+      "name": "Inquisitor Draxus",
+	  "cost": [[1,95]],
+    },
+	{
+      "name": "Inquisitor Greyfax",
+	  "cost": [[1,65]],
+    },
+	{
+      "name": "Inquisitorial Agents",
+	"cost": [[6,100],[12,120]],
+    },
+	{
+      "name": "calidus assassin",
+	  "cost": [[1,100]],
+    },
+	{
+      "name": "Ministorum Priest",
+	  "cost": [[1,40]],
+    },
+	{
+      "name": "Navigator",
+	  "cost": [[1,75]],
+    },
+	{
+      "name": "Rogue Trader Entourage",
+	  "cost": [[4,105]],
+    },
+	{
+      "name": "Subductor Squad",
+	  "cost": [[11,100]],
+    },
+	{
+      "name": "Vigilant Squad",
+	  "cost": [[11,85]],
+    },
+	{
+      "name": "Vindicare Assassin",
+	"cost": [[1,150}]],
+    },
+	{
+      "name": "Voidsmen-at-Arms",
+      "cost": [[6,70]],
+    },
+	
+  ]
+}
