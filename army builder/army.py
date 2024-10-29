@@ -14,8 +14,8 @@ class Army:
     def get_faction(self):
         return self.faction
 
-    def add_unit(self, unit, selected_wargear):
-        tmp_unit = Unit(unit, selected_wargear)
+    def add_unit(self, unit, tmp_cost, selected_wargear):
+        tmp_unit = Unit(unit, tmp_cost, selected_wargear)
         self.units.append(tmp_unit)
 
     def get_same_unit_count(self, unit_name):
@@ -25,7 +25,7 @@ class Army:
                 count = + 1
         return count
 
-    def get_units(self, keyword="all", not_keyword=""):
+    def get_unit_list(self, keyword="all", not_keyword=""):
         if keyword == "all":
             return_list = []
             for unit in self.units:
@@ -67,12 +67,12 @@ Faction: """ + self.faction.title() + """ |
 Detachment rule: """ + self.detachment.title() + """ |
 """
         index = 1
-        if len(self.get_units("character")) > 0:
+        if len(self.get_unit_list("character")) > 0:
             return_string = return_string + """
 ### CHARACTERS
         
 """
-        for unit in self.get_units("character"):
+        for unit in self.get_unit_list("character"):
             tmp_unit = "(" + str(index) + ") " + str(unit.get_name()).title() + """ (""" + str(unit.get_cost()) + """ Points) |
 --- |
 """
@@ -91,13 +91,13 @@ Detachment rule: """ + self.detachment.title() + """ |
 """
             index = index + 1
 
-        if len(self.get_units("battleline")) > 0:
+        if len(self.get_unit_list("battleline")) > 0:
             return_string = return_string + """
 ### BATTLELINE
         
 """
 
-        for unit in self.get_units("battleline"):
+        for unit in self.get_unit_list("battleline"):
             tmp_unit = "(" + str(index) + ") " + str(unit.get_name()).title() + """ (""" + str(unit.get_cost()) + """ Points) |
 --- |
 """
@@ -115,23 +115,23 @@ Detachment rule: """ + self.detachment.title() + """ |
     def delete_unit(self, index):
         del self.units[index]
 
-    def get_selectable_units(self, selection_type):
+    def get_selectable_unit_list(self, selection_type):
         return_list = []
         index = 1
         if selection_type == "delete":
-            for unit in self.get_units():
+            for unit in self.get_unit_list():
                 tmp_unit = "#" + str(index) + " " + str(unit.get_name())
                 return_list.append(tmp_unit)
                 index = index + 1
         elif selection_type == "enhancement":
-            for unit in self.get_units("character", "epic hero"):
+            for unit in self.get_unit_list("character", "epic hero"):
                 if unit.get_enhancement() == "" and len(self.data.get_enhancements(self, unit)):
                     tmp_unit = "#" + str(index) + " " + str(unit.get_name())
                     return_list.append(tmp_unit)
                     index = index + 1
         elif selection_type == "warlord":
             cannot_warlord = ["vindicare assassin", "culexus assassin", "eversor assassin", "calidus assassin"]
-            for unit in self.get_units("character"):
+            for unit in self.get_unit_list("character"):
                 if not unit.get_warlord_status() and not unit.get_name() in cannot_warlord:
                     tmp_unit = "#" + str(index) + " " + str(unit.get_name())
                     return_list.append(tmp_unit)
@@ -140,7 +140,7 @@ Detachment rule: """ + self.detachment.title() + """ |
 
     def get_enhacement_unit(self, index):
         count = 1
-        for unit in self.get_units("character", "epic hero"):
+        for unit in self.get_unit_list("character", "epic hero"):
             if unit.get_enhancement() == "" and len(self.data.get_enhancements(self, unit)) > 0:
                 if count == index:
                     return unit
@@ -149,9 +149,9 @@ Detachment rule: """ + self.detachment.title() + """ |
 
     def get_warlord_unit(self, index):
         count = 1
-        for unit in self.get_units("character"):
+        for unit in self.get_unit_list("character"):
             cannot_warlord = ["vindicare assassin", "culexus assassin", "eversor assassin", "calidus assassin"]
-            for unit in self.get_units("character"):
+            for unit in self.get_unit_list("character"):
                 if not unit.get_warlord_status() and not unit.get_name() in cannot_warlord:
                     if count == index:
                         return unit
@@ -163,11 +163,11 @@ Detachment rule: """ + self.detachment.title() + """ |
             self.get_warlord().remove_warlord_status()
 
     def is_legit_roster(self):
-        if self.get_warlord() is not None and len(self.get_units("character")) > 0:
+        if self.get_warlord() is not None and len(self.get_unit_list("character")) > 0:
             return True
         return False
 
-    def get_selected_enhancements(self):
+    def get_selected_enhancement_list(self):
         return_list = []
         for unit in self.units:
             if unit.get_enhancement() != "":

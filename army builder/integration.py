@@ -7,13 +7,13 @@ def decoder(dict_elem):
 
 
 def is_keyword(unit, keyword):
-    if keyword in unit[8]:
+    if keyword in unit[7]:
         return True
     return False
 
 
 def get_unit_faction(unit):
-    return unit[9][0]
+    return unit[8][0]
 
 
 def get_possible_unit_factions(faction):
@@ -25,44 +25,66 @@ def get_possible_unit_factions(faction):
 
 class Data:
     def __init__(self):
-        self.factions = json.loads(open("factions.json", 'r').read(), object_hook=decoder)[0]
-        self.weapons = json.loads(open("weapons.json", 'r').read(), object_hook=decoder)[0]
-        self.units = json.loads(open("units.json", 'r').read(), object_hook=decoder)[0]
+        self.faction_list = json.loads(open("faction_list.json", 'r').read(), object_hook=decoder)[0]
+        self.unit_list = json.loads(open("unit_list.json", 'r').read(), object_hook=decoder)[0]
+        self.unit_cost_list = json.loads(open("unit_cost_list.json", 'r').read(), object_hook=decoder)[0]
 
-    def get_possible_units(self, roster):
+    def cost_format(self, cost_min, cost_max):
+        if cost_min == cost_max:
+            return " (" + str(cost_max) + " Points)"
+        return " (" + str(cost_min) + "-" + str(cost_max) + " Points)"
+
+
+    def get_possible_unit_list(self, roster):
+        
+
         return_list = []
         faction_names = get_possible_unit_factions(roster.faction)
         max_cost = roster.get_remaining_points()
 
-        for unit in self.units:
+        for unit in self.unit_cost_list:
             formatted_unit = str(unit[0]) + " (" + str(unit[1]) + " Points)"
-            if get_unit_faction(unit) in faction_names:
-                if unit[1] <= max_cost:
-                    unit_count = roster.get_same_unit_count(unit[0])
-                    if is_keyword(unit, "character"):
-                        if is_keyword(unit, "epic hero"):
-                            if unit_count < 1:
-                                return_list.append(formatted_unit)
+
+            for unit_stat_tmp in self.unit_list:
+                if unit_stat_tmp[0] == unit[0]:
+                    unit_stat = unit_stat_tmp
+
+                    if get_unit_faction(unit_stat) in faction_names:
+                        tmp_max_cost = 0
+                        tmp_min_cost = 9000
+                        for unit_cost_option in unit[1]:
+                            if unit_cost_option[1] <= max_cost:
+                                if unit_cost_option[1] > tmp_max_cost:
+                                    tmp_max_cost = unit_cost_option[1]
+                                if unit_cost_option[1] < tmp_min_cost:
+                                    tmp_min_cost = unit_cost_option[1]
+
+                        formatted_unit = str(unit[0]) + self.cost_format(tmp_min_cost, tmp_max_cost)
+                        unit_count = roster.get_same_unit_count(unit_stat[0])
+                        if is_keyword(unit_stat, "character"):
+                            if is_keyword(unit_stat, "epic hero"):
+                                if unit_count < 1:
+                                    return_list.append(formatted_unit)
+                            else:
+                                if unit_count < 1:
+                                    return_list.append(formatted_unit)
                         else:
-                            if unit_count < 1:
+                            if unit_count < 6:
                                 return_list.append(formatted_unit)
-                    else:
-                        if unit_count < 6:
-                            return_list.append(formatted_unit)
         return_list.sort()
         return return_list
 
     def get_unit(self, unit_name):
-        for unit in self.units:
+        for unit in self.unit_list:
             if unit_name == unit[0]:
                 return unit
         return None
 
-    def get_factions(self):
-        return [str(item[0]) for item in self.factions]
+    def get_faction_list(self):
+        return [str(item[0]) for item in self.faction_list]
 
     def get_detachment_rules(self, faction):
-        for item in self.factions:
+        for item in self.faction_list:
             if item[0] == faction:
                 return item[1]
         return None
@@ -70,7 +92,7 @@ class Data:
     def get_enhancements(self, roster, unit):
         return_list = []
         already_in_use = roster.get_selected_enhancements()
-        for faction in self.factions:
+        for faction in self.faction_list:
             if faction[0] == roster.get_faction():
                 for enhancement in faction[2]:
                     for keyword in unit.get_keywords():

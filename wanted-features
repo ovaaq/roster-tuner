@@ -25,5 +25,6 @@
   - Unit movement analysis
   - Unit Toughness and Wound analysis
   - Unit receiving damage from given source
+  - Calculate Secondary missions like Vehicle amount / points, Assasination, etc.
 
 5. Calculate all possible army roster combinations from given detachment and point size

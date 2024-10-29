@@ -1,8 +1,7 @@
 {
-  "units": [
+  "unit_list": [
     {
-      "name": "armiger helverin",
-      "cost": 140,
+      "name": "Armiger Helverin",
       "m": "12\"",
       "t": "10",
       "sv": "3+",
@@ -34,8 +33,7 @@
       }
     },
     {
-      "name": "armiger warglaive",
-      "cost": 150,
+      "name": "Armiger Warglaive",
       "m": "12\"",
       "t": "10",
       "sv": "3+",
@@ -67,8 +65,7 @@
       }
     },
     {
-      "name": "calidus assassin",
-      "cost": 100,
+      "name": "Calidus Assassin",
       "m": "7\"",
       "t": "4",
       "sv": "6+",
@@ -95,8 +92,7 @@
       }
     },
     {
-      "name": "canis rex",
-      "cost": 435,
+      "name": "Canis Rex",
       "m": "10\"",
       "t": "12",
       "sv": "3+",
@@ -127,8 +123,7 @@
       }
     },
     {
-      "name": "knight castellan",
-      "cost": 565,
+      "name": "Knight Castellan",
       "m": "8\"",
       "t": "13",
       "sv": "2+",
@@ -165,8 +160,7 @@
       }
     },
     {
-      "name": "knight crusader",
-      "cost": 475,
+      "name": "Knight Crusader",
       "m": "10\"",
       "t": "12",
       "sv": "3+",
@@ -210,8 +204,7 @@
       }
     },
     {
-      "name": "knight errant",
-      "cost": 430,
+      "name": "Knight Errant",
       "m": "10\"",
       "t": "12",
       "sv": "3+",
@@ -253,8 +246,7 @@
       }
     },
     {
-      "name": "knight gallant",
-      "cost": 400,
+      "name": "Knight Gallant",
       "m": "12\"",
       "t": "12",
       "sv": "3+",
@@ -293,8 +285,7 @@
       }
     },
     {
-      "name": "knight paladin",
-      "cost": 450,
+      "name": "Knight Paladin",
       "m": "10\"",
       "t": "12",
       "sv": "3+",
@@ -336,8 +327,7 @@
       }
     },
     {
-      "name": "knight preceptor",
-      "cost": 430,
+      "name": "Knight Preceptor",
       "m": "10\"",
       "t": "12",
       "sv": "3+",
@@ -381,8 +371,7 @@
       }
     },
     {
-      "name": "knight valiant",
-      "cost": 565,
+      "name": "Knight Valiant",
       "m": "8\"",
       "t": "13",
       "sv": "2+",
@@ -419,8 +408,7 @@
       }
     },
     {
-      "name": "knight warden",
-      "cost": 480,
+      "name": "Knight Warden",
       "m": "10\"",
       "t": "12",
       "sv": "3+",
@@ -462,8 +450,427 @@
       }
     },
     {
-      "name": "vindicare assassin",
-      "cost": 80,
+      "name": "Vindicare Assassin",
+      "m": "7\"",
+      "t": "4",
+      "sv": "6+",
+      "w": "4",
+      "ld": "6+",
+      "oc": "1",
+      "keywords": [
+        "infantry",
+        "character",
+        "epic hero",
+        "smoke",
+        "imperium",
+        "vindicare assassin"
+      ],
+      "faction_keywords": [
+        "agents of the imperium"
+      ],
+      "wargear": {
+        "always": [
+          "exitus pistol",
+          "exitus rifle",
+          "vindicare combat knife"
+        ],
+        "options": []
+      }
+    },
+	    {
+      "name": "Culexus Assassin",
+      "m": "7\"",
+      "t": "4",
+      "sv": "6+",
+      "w": "4",
+      "ld": "6+",
+      "oc": "1",
+      "keywords": [
+        "infantry",
+        "character",
+        "epic hero",
+        "smoke",
+        "imperium",
+        "vindicare assassin"
+      ],
+      "faction_keywords": [
+        "agents of the imperium"
+      ],
+      "wargear": {
+        "always": [
+          "exitus pistol",
+          "exitus rifle",
+          "vindicare combat knife"
+        ],
+        "options": []
+      }
+    },
+	    {
+      "name": "Eversor Assassin",
+      "m": "7\"",
+      "t": "4",
+      "sv": "6+",
+      "w": "4",
+      "ld": "6+",
+      "oc": "1",
+      "keywords": [
+        "infantry",
+        "character",
+        "epic hero",
+        "smoke",
+        "imperium",
+        "vindicare assassin"
+      ],
+      "faction_keywords": [
+        "agents of the imperium"
+      ],
+      "wargear": {
+        "always": [
+          "exitus pistol",
+          "exitus rifle",
+          "vindicare combat knife"
+        ],
+        "options": []
+      }
+		},
+	    {
+      "name": "Inquisitor Coteaz",
+      "m": "7\"",
+      "t": "4",
+      "sv": "6+",
+      "w": "4",
+      "ld": "6+",
+      "oc": "1",
+      "keywords": [
+        "infantry",
+        "character",
+        "epic hero",
+        "smoke",
+        "imperium",
+        "vindicare assassin"
+      ],
+      "faction_keywords": [
+        "agents of the imperium"
+      ],
+      "wargear": {
+        "always": [
+          "exitus pistol",
+          "exitus rifle",
+          "vindicare combat knife"
+        ],
+        "options": []
+      }
+		},
+	    {
+      "name": "Inquisitor Draxus",
+      "m": "7\"",
+      "t": "4",
+      "sv": "6+",
+      "w": "4",
+      "ld": "6+",
+      "oc": "1",
+      "keywords": [
+        "infantry",
+        "character",
+        "epic hero",
+        "smoke",
+        "imperium",
+        "vindicare assassin"
+      ],
+      "faction_keywords": [
+        "agents of the imperium"
+      ],
+      "wargear": {
+        "always": [
+          "exitus pistol",
+          "exitus rifle",
+          "vindicare combat knife"
+        ],
+        "options": []
+      }
+    },
+	    {
+      "name": "Inquisitor Greyfax",
+      "m": "7\"",
+      "t": "4",
+      "sv": "6+",
+      "w": "4",
+      "ld": "6+",
+      "oc": "1",
+      "keywords": [
+        "infantry",
+        "character",
+        "epic hero",
+        "smoke",
+        "imperium",
+        "vindicare assassin"
+      ],
+      "faction_keywords": [
+        "agents of the imperium"
+      ],
+      "wargear": {
+        "always": [
+          "exitus pistol",
+          "exitus rifle",
+          "vindicare combat knife"
+        ],
+        "options": []
+      }
+    },
+	    {
+      "name": "Ministorum Priest",
+      "m": "7\"",
+      "t": "4",
+      "sv": "6+",
+      "w": "4",
+      "ld": "6+",
+      "oc": "1",
+      "keywords": [
+        "infantry",
+        "character",
+        "epic hero",
+        "smoke",
+        "imperium",
+        "vindicare assassin"
+      ],
+      "faction_keywords": [
+        "agents of the imperium"
+      ],
+      "wargear": {
+        "always": [
+          "exitus pistol",
+          "exitus rifle",
+          "vindicare combat knife"
+        ],
+        "options": []
+      }
+    },
+	    {
+      "name": "Navigator",
+      "m": "7\"",
+      "t": "4",
+      "sv": "6+",
+      "w": "4",
+      "ld": "6+",
+      "oc": "1",
+      "keywords": [
+        "infantry",
+        "character",
+        "epic hero",
+        "smoke",
+        "imperium",
+        "vindicare assassin"
+      ],
+      "faction_keywords": [
+        "agents of the imperium"
+      ],
+      "wargear": {
+        "always": [
+          "exitus pistol",
+          "exitus rifle",
+          "vindicare combat knife"
+        ],
+        "options": []
+      }
+    },
+	    {
+      "name": "Rogue Trader Entourage",
+      "m": "7\"",
+      "t": "4",
+      "sv": "6+",
+      "w": "4",
+      "ld": "6+",
+      "oc": "1",
+      "keywords": [
+        "infantry",
+        "character",
+        "epic hero",
+        "smoke",
+        "imperium",
+        "vindicare assassin"
+      ],
+      "faction_keywords": [
+        "agents of the imperium"
+      ],
+      "wargear": {
+        "always": [
+          "exitus pistol",
+          "exitus rifle",
+          "vindicare combat knife"
+        ],
+        "options": []
+      }
+    },
+	    {
+      "name": "Inquisitor Draxus",
+      "m": "7\"",
+      "t": "4",
+      "sv": "6+",
+      "w": "4",
+      "ld": "6+",
+      "oc": "1",
+      "keywords": [
+        "infantry",
+        "character",
+        "epic hero",
+        "smoke",
+        "imperium",
+        "vindicare assassin"
+      ],
+      "faction_keywords": [
+        "agents of the imperium"
+      ],
+      "wargear": {
+        "always": [
+          "exitus pistol",
+          "exitus rifle",
+          "vindicare combat knife"
+        ],
+        "options": []
+      }
+    },
+	    {
+      "name": "Imperial Navy Breachers",
+      "m": "7\"",
+      "t": "4",
+      "sv": "6+",
+      "w": "4",
+      "ld": "6+",
+      "oc": "1",
+      "keywords": [
+        "infantry",
+        "character",
+        "epic hero",
+        "smoke",
+        "imperium",
+        "vindicare assassin"
+      ],
+      "faction_keywords": [
+        "agents of the imperium"
+      ],
+      "wargear": {
+        "always": [
+          "exitus pistol",
+          "exitus rifle",
+          "vindicare combat knife"
+        ],
+        "options": []
+      }
+    },
+	    {
+      "name": "Vigilant Squad",
+      "m": "7\"",
+      "t": "4",
+      "sv": "6+",
+      "w": "4",
+      "ld": "6+",
+      "oc": "1",
+      "keywords": [
+        "infantry",
+        "character",
+        "epic hero",
+        "smoke",
+        "imperium",
+        "vindicare assassin"
+      ],
+      "faction_keywords": [
+        "agents of the imperium"
+      ],
+      "wargear": {
+        "always": [
+          "exitus pistol",
+          "exitus rifle",
+          "vindicare combat knife"
+        ],
+        "options": []
+      }
+    },
+	    {
+      "name": "Exaction Squad",
+      "m": "7\"",
+      "t": "4",
+      "sv": "6+",
+      "w": "4",
+      "ld": "6+",
+      "oc": "1",
+      "keywords": [
+        "infantry",
+        "character",
+        "epic hero",
+        "smoke",
+        "imperium",
+        "vindicare assassin"
+      ],
+      "faction_keywords": [
+        "agents of the imperium"
+      ],
+      "wargear": {
+        "always": [
+          "exitus pistol",
+          "exitus rifle",
+          "vindicare combat knife"
+        ],
+        "options": []
+      }
+    },
+	    {
+      "name": "Inquisitorial Agents",
+      "m": "7\"",
+      "t": "4",
+      "sv": "6+",
+      "w": "4",
+      "ld": "6+",
+      "oc": "1",
+      "keywords": [
+        "infantry",
+        "character",
+        "epic hero",
+        "smoke",
+        "imperium",
+        "vindicare assassin"
+      ],
+      "faction_keywords": [
+        "agents of the imperium"
+      ],
+      "wargear": {
+        "always": [
+          "exitus pistol",
+          "exitus rifle",
+          "vindicare combat knife"
+        ],
+        "options": []
+      }
+    },
+	    {
+      "name": "Subductor Squad",
+      "m": "7\"",
+      "t": "4",
+      "sv": "6+",
+      "w": "4",
+      "ld": "6+",
+      "oc": "1",
+      "keywords": [
+        "infantry",
+        "character",
+        "epic hero",
+        "smoke",
+        "imperium",
+        "vindicare assassin"
+      ],
+      "faction_keywords": [
+        "agents of the imperium"
+      ],
+      "wargear": {
+        "always": [
+          "exitus pistol",
+          "exitus rifle",
+          "vindicare combat knife"
+        ],
+        "options": []
+      }
+    },
+	    {
+      "name": "Voidsmen-at-arms",
       "m": "7\"",
       "t": "4",
       "sv": "6+",

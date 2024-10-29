@@ -1,14 +1,14 @@
 class Unit:
-    def __init__(self, data, wargear=[], size=1):
+    def __init__(self, data, tmp_cost=0, wargear=[], size=1):
         self.unit_size = size
         self.enhancement = ""
         self.name = data[0]
         self.is_warlord = False
-        self.cost = int(data[1])
-        wargear.extend(data[10][0])
+        self.cost = int(tmp_cost)
+        wargear.extend(data[9][0])
         self.wargear = wargear
         self.wargear.sort()
-        self.keywords = data[8]
+        self.keywords = data[7]
 
     def get_cost(self):
         return self.cost
