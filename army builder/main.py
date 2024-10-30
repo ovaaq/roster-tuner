@@ -129,6 +129,10 @@ while True:
 
         tmp_cost = 0
 
+        cost_option_list = data.get_cost_option_list(tmp_unit)
+        if len(cost_option_list) == 1:
+            tmp_cost = cost_option_list[0][1]
+
         wargear_options = get_wargear_options(tmp_unit)
         selected_wargear = []
         if len(wargear_options) > 0:

@@ -29,6 +29,12 @@ class Data:
         self.unit_list = json.loads(open("unit_list.json", 'r').read(), object_hook=decoder)[0]
         self.unit_cost_list = json.loads(open("unit_cost_list.json", 'r').read(), object_hook=decoder)[0]
 
+    def get_cost_option_list(self, tmp_unit):
+        for unit_cost_options in self.unit_cost_list:
+            if unit_cost_options[0] == tmp_unit[0]:
+                return unit_cost_options[1]
+        return []
+
     def cost_format(self, cost_min, cost_max):
         if cost_min == cost_max:
             return " (" + str(cost_max) + " Points)"
